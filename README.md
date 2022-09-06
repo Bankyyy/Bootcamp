@@ -1,5 +1,5 @@
-# myfirstXML
-learning xml
+# DataScience_Bootcamp_Batch5
+Contains my homeworks and projects
 
 ## My Skills
 
