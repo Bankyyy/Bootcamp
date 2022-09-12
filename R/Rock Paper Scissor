@@ -1,0 +1,31 @@
+actions <- c("rock","paper","scissor")
+
+rps <- function() {
+  win <- 0
+  lose <- 0
+  draw <- 0
+  while (TRUE) {
+    player <- tolower(readline("What's your choice: "))
+    com <- sample(actions,1)
+    if (player == "quit") {
+      break
+    }
+      else if (player == "rock" & com == "scissor" || 
+               player == "scissor" & com == "paper" ||
+               player == "paper" & com == "rock") {
+        print("win")
+        win <- win+1
+      } else if (player == "rock" & com == "paper" || 
+                 player == "scissor" & com == "rock" ||
+                 player == "paper" & com == "scissor") {
+        print("lose")
+        lose <- lose+1
+      } else if (player == com) {
+        print("draw")
+        draw <- draw+1
+      } else {
+        print("Plz type rock,paper,scissor or quit")
+      }
+    cat("Score : \n win lose draw \n",win,lose,draw)
+  }
+}
