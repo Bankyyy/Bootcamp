@@ -12,4 +12,4 @@ Contains my homeworks and projects
 
 ## My portfolios
 
-Please see my google data studio dashboard [here](www.google.com)
+Still non
