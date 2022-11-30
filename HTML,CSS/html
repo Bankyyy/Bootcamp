@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parallax Scrolling Website </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Mangata & Gallo</a>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img src="bg.jpg" id="bg">
+            <img src="neck.png" id="neck">
+            <h2 id="text">Jewellery</h2>
+            <a href="#sec" id="btn">Explore</a>
+        </section>
+        <div class="sec" id="sec">
+            <h2>Parallax Scrolling Effects</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Morbi tincidunt ornare massa eget egestas. Amet porttitor eget dolor morbi. Mi in nulla
+                posuere sollicitudin aliquam ultrices sagittis orci a. Enim lobortis scelerisque fermentum dui.
+                Pellentesque
+                sit amet porttitor eget dolor morbi non arcu. Quam nulla porttitor massa id neque aliquam vestibulum
+                morbi.
+                Adipiscing elit ut aliquam purus sit amet luctus venenatis.<br><br>Lorem ipsum dolor sit amet,
+                consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Morbi tincidunt ornare massa eget egestas. Amet porttitor eget dolor morbi. Mi in nulla
+                posuere sollicitudin aliquam ultrices sagittis orci a. Enim lobortis scelerisque fermentum dui.
+                Pellentesque
+                sit amet porttitor eget dolor morbi non arcu. Quam nulla porttitor massa id neque aliquam vestibulum
+                morbi.
+                Adipiscing elit ut aliquam purus sit amet luctus venenatis.</p>
+        </div>
+        <article class="sec2" id="sec2">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Morbi tincidunt ornare massa eget egestas. Amet porttitor eget dolor morbi. Mi in nulla
+                posuere sollicitudin aliquam ultrices sagittis orci a. Enim lobortis scelerisque fermentum dui.
+            </p>
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Morbi tincidunt ornare massa eget egestas. Amet porttitor eget dolor morbi. Mi in nulla
+                posuere sollicitudin aliquam ultrices sagittis orci a. Enim lobortis scelerisque fermentum dui.
+            </p>
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Morbi tincidunt ornare massa eget egestas. Amet porttitor eget dolor morbi. Mi in nulla
+                posuere sollicitudin aliquam ultrices sagittis orci a. Enim lobortis scelerisque fermentum dui.
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <div>
+            <img src="Asset 2@3x.png" width="200" height="42" class="left">
+        </div>
+        <div>
+            <p style="text-align:right">Copyright Mangata & Gallo</p>
+        </div>
+    </footer>
+
+    <script>
+        let bg = document.getElementById('bg');
+        let neck = document.getElementById('neck');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            bg.style.left = value * 0.25 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+        })
+    </script>
+</body>
+
+</html>
